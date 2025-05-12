@@ -1,5 +1,5 @@
 # Baseball Game enhanced Version
-# 넣고싶은거: 1. 4개 숫자(기회 30번) 2. 타이머 3.(가능하다면) 화면에 ball, strike 출력도움
+# 넣고싶은거: 1. 4개 숫자(기회 30번) 2. 타이머 3.(가능하다면) 화면에 ball, strike 출력도움 
 
 import random
 secretLen = 3 # 무작위 숫자의 길이는 3임
