@@ -24,6 +24,7 @@ typedef enum my_days days;
 
 days f1(dlb_str a, dlb_str b, BYTE* c);
 union my_data f2(dlb_str* b, BYTE c, int d, double e);
+void f3(double* x, char* str, days enum_val);
 
 int main(){
 
@@ -41,6 +42,8 @@ int main(){
 	days k = f1(a, b, &c);
 	
 	union my_data e = f2(&b, c, 88, 3.14);
+
+    f3(&b.d, b.s, k);
 	
 	// union my_data a;
 	
@@ -61,4 +64,8 @@ union my_data f2(dlb_str* b, BYTE c, int d, double e){
 	union my_data x;
 	
 	return x;
+}
+
+void f3(double* x, char* str, days enum_val){
+
 }
