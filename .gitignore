@@ -1,6 +1,15 @@
 # =====================
 # C/C++ Git Ignore 설정
 # =====================
+# Python 추가함
+# =====================
+
+# pycache folder 제거
+__pycache__/
+
+# pycache File 제거
+*.pyc
+*.pycache
 
 # 예외 
 !memo*.txt
