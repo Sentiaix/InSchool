@@ -10,7 +10,7 @@ int main(void)
     char stop_str[] = "$$$$$";
 
     no = NUM;
-    printf("%d개의 문자열을 입력하라(\"$$$$$\"로 중단).\n", NUM);
+    printf("Enter the strings (max %d strings) (Stop to type \"$$$$$\").\n", NUM);
 
     for (i = 0; i < NUM; i++) {
         printf("s[%d] : ", i);
@@ -21,6 +21,11 @@ int main(void)
             no = i;
             break;
         }
+
+        // if (s[i][0] == '$' && s[i][1] == '$' && s[i][2] == '$' && s[i][3] == '$' && s[i][4] == '$' && s[i][5] == '\0') {
+        //     no = i;
+        //     break;
+        // }
     }
 
     for (i = 0; i < no; i++)
